@@ -11,7 +11,7 @@ from langchain.prompts import SystemMessagePromptTemplate
 
 # ✅ Connect to MySQL Database
 try:
-    db = SQLDatabase.from_uri("mysql+pymysql://root:root@localhost/aryandb1")
+    db = SQLDatabase.from_uri("mysql+pymysql://username:password@localhost/databse_name")
     print("Connected to:", db.dialect)
     print("Tables:", db.get_usable_table_names())
 except Exception as e:
